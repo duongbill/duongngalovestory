@@ -129,7 +129,74 @@
     }
     .hero__person-name{
         text-wrap: nowrap;
-        display: none;
+        display: block;
+        font-size: 1.6rem;
+        margin-top: 16px;
+    }
+    
+    .hero {
+        padding-bottom: 60px;
+        min-height: auto;
+        padding-top: 60px;
+    }
+    
+    .hero__title {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    
+    .hero__list {
+        column-gap: 20px;
+        row-gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .hero__circle {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .circle__count, #daysCount {
+        font-size: 4.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .circle__day {
+        font-size: 1.6rem;
+    }
+    
+    .hero__person-avt {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .hero__person {
+        padding: 15px;
+    }
+    
+    .lds-heart {
+        width: 70px;
+        height: 70px;
+        transform-origin: 35px 35px;
+    }
+    
+    .lds-heart div {
+        width: 28px;
+        height: 28px;
+        top: 24px;
+        left: 24px;
+    }
+    
+    .lds-heart div:before {
+        left: -21px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .lds-heart div:after {
+        top: -21px;
+        width: 28px;
+        height: 28px;
     }
     .info__inner{
         flex-direction: column;
@@ -233,8 +300,51 @@
         object-fit: cover;
     }
     .contact__card{
-        width: 400px;
+        width: 90%;
+        max-width: 400px;
         margin-top: 40px;
+        height: auto;
+        min-height: 375px;
+    }
+    
+    .hero__title {
+        font-size: 40px;
+    }
+    
+    .heading-section {
+        font-size: 48px;
+    }
+    
+    .hero__circle {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .circle__count, #daysCount {
+        font-size: 3.6rem;
+    }
+    
+    .info__media-wrap {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        min-height: 450px;
+    }
+    
+    .info__media-img {
+        width: 85%;
+        height: auto;
+        max-height: 350px;
+    }
+    
+    .gallery__nav {
+        width: 95%;
+        padding: 20px 10px;
+    }
+    
+    .gallery__nav-label {
+        font-size: 1.4rem;
+        padding: 10px 16px;
     }
     
 }

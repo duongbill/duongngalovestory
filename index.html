@@ -1,1518 +1,1511 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InLove</title>
+    <title>Dương & Nga - Our Love Story</title>
+    
     <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- Font Dancing Script -->
+    <link rel="icon" type="image/png" href="./assess/img/a.png" />
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Reset Css -->
-    <link rel="stylesheet" href="./assess/css/reset.css" />
-    <!-- Style Css -->
-    <link rel="stylesheet" href="./assess/css/style.css" />
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="./assess/css/responsive.css" />
-    <!-- Flatpickr CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Animate.css -->
-    <!-- Animate.css v4 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- CDN FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- AOS (Animate On Scroll) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-    <!-- Swiper Css -->
-    <link rel="stylesheet" href="./assess/css/swiper.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-top">
-          <label for="menu-checkbox" class="toggle-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-              <path
-                fill="currentColor"
-                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-              />
-            </svg>
-          </label>
-          <a href="#!" class="logo-link">
-            <span class="logo-name">Inlove</span>
-          </a>
-          <nav class="navigation-bar pc-nav">
-            <ul class="nav-item">
-              <li class="item"><a href="#home" class="item-link">Home</a></li>
-              <li class="item">
-                <a href="#info" class="item-link">About Us</a>
-              </li>
-              <li class="item">
-                <a href="#diary" class="item-link">Our Story</a>
-              </li>
-              <li class="item"><a href="#quote" class="item-link">Quote</a></li>
-              <li class="item">
-                <a href="#gallery" class="item-link">Gallery</a>
-              </li>
-            </ul>
-          </nav>
-          <a href="#contact" class="btn-grad header__cta">Send Message</a>
-        </div>
-      </div>
-    </header>
-    <!-- Mobile Header -->
-    <header class="mobile-header">
-      <input type="checkbox" class="menu-checkbox" name="" id="menu-checkbox" />
-      <!-- Overlay -->
-      <label for="menu-checkbox" class="menu-overlay"></label>
-      <div class="menu-drawer">
-        <nav class="navigation-bar">
-          <ul class="nav-item">
-            <li class="item"><a href="#home" class="item-link">Home</a></li>
-            <li class="item">
-              <a href="#info" class="item-link">About Us</a>
-            </li>
-            <li class="item">
-              <a href="#diary" class="item-link">Our Story</a>
-            </li>
-            <li class="item"><a href="#quote" class="item-link">Quote</a></li>
-            <li class="item">
-              <a href="#gallery" class="item-link">Gallery</a>
-            </li>
-            <li class="item">
-              <a href="#contact" class="item-link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero" id="home" data-animate="animate__backInLeft">
-        <div class="container">
-          <div class="hero__inner">
-            <p class="hero__title">Been Together...</p>
-            <label for="startDateInput">
-              <div class="hero__circle" id="circleDate">
-                <span class="circle__count" id="daysCount"></span>
-                <p class="circle__day">Days</p>
-              </div>
-            </label>
-            <div class="hero__list">
-              <!-- Person 1 -->
-              <div class="hero__person">
-                <figure class="hero__img-wrap">
-                  <img
-                    src="./assess/img/Long.jpg"
-                    alt=""
-                    class="hero__person-avt hero__person-avt-male"
-                  />
-                </figure>
-                <p class="hero__person-name">Nguyen Thanh Long</p>
-              </div>
-              <div class="lds-heart"><div></div></div>
-              <!-- Person 2 -->
-              <div class="hero__person">
-                <figure class="hero__img-wrap">
-                  <img
-                    src="./assess/img/Huyen.jpg"
-                    alt=""
-                    class="hero__person-avt hero__person-avt-female"
-                  />
-                </figure>
-                <p class="hero__person-name">Tran Thu Huyen</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="info" id="info" data-animate="animate__fadeInRightBig">
-        <div class="container">
-          <h2 class="heading-section">About Us</h2>
-          <div class="info__switch-wrap">
-            <div class="info__switch-inner">
-              <div class="info__switch">
-                <input
-                  type="checkbox"
-                  name=""
-                  id="info-switch"
-                  class="info__switch-input"
-                  hidden
-                />
-                <label for="info-switch" class="info__switch-label">
-                  <span class="info__switch-value girl">
-                    Huyen
-                    <img src="./assess/icon/girl.png" alt="" class="girl-icon"
-                  /></span>
-                  <span class="info__switch-value boy">
-                    Long
-                    <img src="./assess/icon/man.png" alt="" class="girl-icon" />
-                  </span>
-                </label>
-              </div>
-            </div>
-
-            <!--  -->
-            <div class="info__inner info__inner-huyen">
-              <div class="info__media">
-                <figure class="info__media-wrap">
-                  <img
-                    src="./assess/img/Huyen.jpg"
-                    alt=""
-                    class="info__media-img animate__animated animate__tada"
-                  />
-                  <p class="info__media-name">
-                    <span
-                      ><img
-                        src="./assess/icon/flower.png"
-                        alt=""
-                        class="info__media-decor-small"
-                    /></span>
-                    Huyen
-                    <span
-                      ><img
-                        src="./assess/icon/flower.png"
-                        alt=""
-                        class="info__media-decor-small"
-                    /></span>
-                  </p>
-                  <!-- Decor -->
-                  <img
-                    src="./assess/icon/heart-box.png"
-                    alt=""
-                    class="info__media-decor"
-                  />
-                  <img
-                    src="./assess/icon/Cauvong.png"
-                    alt=""
-                    class="info__media-decor"
-                  />
-                  <div class="info__card">
-                    <figure class="info__card-avt-wrap">
-                      <img
-                        src="./assess/img/Huyen3.jpg"
-                        alt=""
-                        class="info__card-avt"
-                      />
-                    </figure>
-                    <div class="info__card-detail">
-                      <p class="info__card-name">MiniBoo</p>
-                      <p class="info__card-desc">Pisces</p>
-                      <p class="info__card-desc">02/03/2003</p>
-                    </div>
-                  </div>
-                </figure>
-              </div>
-              <div class="info__content">
-                <h3 class="info__heading">Love Material</h3>
-                <div class="info__list">
-                  <h4 class="info__item-heading">Acts of Service</h4>
-                  <div class="info__skill-progress" data-progress="70%"></div>
-                  <h4 class="info__item-heading">Quality Time</h4>
-                  <div class="info__skill-progress" data-progress="100%"></div>
-                  <h4 class="info__item-heading">Words of affirmation</h4>
-                  <div class="info__skill-progress" data-progress="10%"></div>
-                  <h4 class="info__item-heading">Receiving gifts</h4>
-                  <div class="info__skill-progress" data-progress="90%"></div>
-                  <h4 class="info__item-heading">Physical touch</h4>
-                  <div class="info__skill-progress" data-progress="70%"></div>
-                </div>
-              </div>
-            </div>
-            <div class="info__inner info__inner-long">
-              <div class="info__media">
-                <figure class="info__media-wrap">
-                  <img
-                    src="./assess/img/Long.jpg"
-                    alt=""
-                    class="info__media-img animate__animated animate__tada"
-                  />
-                  <p class="info__media-name">
-                    <span
-                      ><img
-                        src="./assess/icon/sparkles.png"
-                        alt=""
-                        class="info__media-decor-small"
-                    /></span>
-                    Long
-                    <span
-                      ><img
-                        src="./assess/icon/sparkles.png"
-                        alt=""
-                        class="info__media-decor-small"
-                    /></span>
-                  </p>
-                  <img
-                    src="./assess/icon/heart-box.png"
-                    alt=""
-                    class="info__media-decor"
-                  />
-                  <img
-                    src="./assess/icon/Cauvong.png"
-                    alt=""
-                    class="info__media-decor"
-                  />
-                  <div class="info__card">
-                    <figure class="info__card-avt-wrap">
-                      <img
-                        src="./assess/img/Long5.jpg"
-                        alt=""
-                        class="info__card-avt"
-                      />
-                    </figure>
-                    <div class="info__card-detail">
-                      <p class="info__card-name">Zin</p>
-                      <p class="info__card-desc">Taurus</p>
-                      <p class="info__card-desc">18/05/2004</p>
-                    </div>
-                  </div>
-                </figure>
-              </div>
-              <div class="info__content">
-                <h3 class="info__heading">Love Material</h3>
-                <div class="info__list">
-                  <h4 class="info__item-heading">Acts of Service</h4>
-                  <div class="info__skill-progress" data-progress="80%"></div>
-                  <h4 class="info__item-heading">Quality Time</h4>
-                  <div class="info__skill-progress" data-progress="80%"></div>
-                  <h4 class="info__item-heading">Words of affirmation</h4>
-                  <div class="info__skill-progress" data-progress="70%"></div>
-                  <h4 class="info__item-heading">Receiving gifts</h4>
-                  <div class="info__skill-progress" data-progress="70%"></div>
-                  <h4 class="info__item-heading">Physical touch</h4>
-                  <div class="info__skill-progress" data-progress="80%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="diary" id="diary" data-animate="animate__zoomInUp">
-        <div class="container">
-          <h2 class="heading-section">Our Diary</h2>
-          <p class="gallery__desc diary__desc">
-            This diary captures the precious milestones of our love — from the
-            first message to every sweet moment we’ve shared along the way
-          </p>
-          <div
-            class="diary__list animate__animated animate__zoomInUp show-on-laptop"
-          >
-            <!-- Card 1 -->
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/favourite (1).png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">25/03/2025</p>
-                  <h3 class="diary__card-heading">Tin Nhắn Đầu Tiên</h3>
-                  <p class="diary__card-desc">Ngày đầu tiên nhắn tin</p>
-                </div>
-                <div class="diary__card-back">
-                  <img
-                    src="./assess/img/FirstMessage.jpg"
-                    alt=""
-                    class="diary__preview-img"
-                  />
-                </div>
-              </div>
-            </article>
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/handshake.png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">28/04/2025</p>
-                  <h3 class="diary__card-heading">Lần đầu gặp nhau</h3>
-                  <p class="diary__card-desc">Đi Canopy</p>
-                </div>
-                <div class="diary__card-back">
-                  <img
-                    src="./assess/img/FirstDay.jpg"
-                    alt=""
-                    class="diary__preview-img"
-                  />
-                </div>
-              </div>
-            </article>
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/anniversary.png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">18/05/2025</p>
-                  <h3 class="diary__card-heading">Sinh Nhật Đầu Tiên</h3>
-                  <p class="diary__card-desc">My BirthDay</p>
-                </div>
-                <div class="diary__card-back">
-                  <video
-                    class="diary__preview-video"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    controls
-                  >
-                    <source src="./assess/img/HappyBirthDay.mp4" />
-                  </video>
-                </div>
-              </div>
-            </article>
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/couple.png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">25/05/2025</p>
-                  <h3 class="diary__card-heading">Ngày đầu yêu</h3>
-                  <p class="diary__card-desc">The Day We Love</p>
-                </div>
-                <div class="diary__card-back">
-                  <img
-                    src="./assess/img/TheDayWeLove.jpg"
-                    alt=""
-                    class="diary__preview-img"
-                  />
-                </div>
-              </div>
-            </article>
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/sun.png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">29/05/2025</p>
-                  <h3 class="diary__card-heading">Sweetie</h3>
-                  <p class="diary__card-desc">Đáng yêu vkl</p>
-                </div>
-                <div class="diary__card-back">
-                  <img
-                    src="./assess/img/Sweet.jpg"
-                    alt=""
-                    class="diary__preview-img"
-                  />
-                </div>
-              </div>
-            </article>
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/couple.png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">04/06/2025</p>
-                  <h3 class="diary__card-heading">Rainy day in Sapa</h3>
-                  <p class="diary__card-desc">Cafe Bao Cấp</p>
-                </div>
-                <div class="diary__card-back">
-                  <img
-                    src="./assess/img/4_6Sapa.jpg"
-                    alt=""
-                    class="diary__preview-img"
-                  />
-                </div>
-              </div>
-            </article>
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/couple.png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">21/06/2025</p>
-                  <h3 class="diary__card-heading">Universal</h3>
-                  <p class="diary__card-desc">Hold your hand</p>
-                </div>
-                <div class="diary__card-back">
-                  <img
-                    src="./assess/img/21_6.jpg"
-                    alt=""
-                    class="diary__preview-img"
-                  />
-                </div>
-              </div>
-            </article>
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/calendar.png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">25/06/2025</p>
-                  <h3 class="diary__card-heading">First Month</h3>
-                  <p class="diary__card-desc">1st Month</p>
-                </div>
-                <div class="diary__card-back">
-                  <img
-                    src="./assess/img/1month.jpg"
-                    alt=""
-                    class="diary__preview-img"
-                  />
-                </div>
-              </div>
-            </article>
-            <article class="diary__card">
-              <div class="diary__card-inner">
-                <div class="diary__card-front">
-                  <figure diary__card-wrap>
-                    <img
-                      src="./assess/icon/calendar.png"
-                      alt=""
-                      class="diary__card-img"
-                    />
-                  </figure>
-                  <p class="diary__card-day">25/07/2025</p>
-                  <h3 class="diary__card-heading">2 Months</h3>
-                  <p class="diary__card-desc">2 Month with Graduation</p>
-                </div>
-                <div class="diary__card-back">
-                  <img
-                    src="./assess/img/2month.jpg"
-                    alt=""
-                    class="diary__preview-img"
-                  />
-                </div>
-              </div>
-            </article>
-          </div>
-          <div
-            class="diary__list animate__animated animate__zoomInUp show-on-mobile"
-          >
-            <div class="diary__scroll">
-              <!-- Card 1 -->
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/favourite (1).png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">25/03/2025</p>
-                    <h3 class="diary__card-heading">Tin Nhắn Đầu Tiên</h3>
-                    <p class="diary__card-desc">Ngày đầu tiên nhắn tin</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <img
-                      src="./assess/img/FirstMessage.jpg"
-                      alt=""
-                      class="diary__preview-img"
-                    />
-                  </div>
-                </div>
-              </article>
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/handshake.png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">28/04/2025</p>
-                    <h3 class="diary__card-heading">Lần đầu gặp nhau</h3>
-                    <p class="diary__card-desc">Đi Canopy</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <img
-                      src="./assess/img/FirstDay.jpg"
-                      alt=""
-                      class="diary__preview-img"
-                    />
-                  </div>
-                </div>
-              </article>
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/anniversary.png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">18/05/2025</p>
-                    <h3 class="diary__card-heading">Sinh Nhật Đầu Tiên</h3>
-                    <p class="diary__card-desc">My BirthDay</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <video
-                      class="diary__preview-video"
-                      autoplay
-                      muted
-                      loop
-                      playsinline
-                      controls
-                    >
-                      <source src="./assess/img/HappyBirthDay.mp4" />
-                    </video>
-                  </div>
-                </div>
-              </article>
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/couple.png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">25/05/2025</p>
-                    <h3 class="diary__card-heading">Ngày đầu yêu</h3>
-                    <p class="diary__card-desc">The Day We Love</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <img
-                      src="./assess/img/TheDayWeLove.jpg"
-                      alt=""
-                      class="diary__preview-img"
-                    />
-                  </div>
-                </div>
-              </article>
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/sun.png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">29/05/2025</p>
-                    <h3 class="diary__card-heading">Sweetie</h3>
-                    <p class="diary__card-desc">Đáng yêu vkl</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <img
-                      src="./assess/img/Sweet.jpg"
-                      alt=""
-                      class="diary__preview-img"
-                    />
-                  </div>
-                </div>
-              </article>
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/couple.png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">04/06/2025</p>
-                    <h3 class="diary__card-heading">Rainy day in Sapa</h3>
-                    <p class="diary__card-desc">Cafe Bao Cấp</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <img
-                      src="./assess/img/4_6Sapa.jpg"
-                      alt=""
-                      class="diary__preview-img"
-                    />
-                  </div>
-                </div>
-              </article>
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/couple.png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">21/06/2025</p>
-                    <h3 class="diary__card-heading">Universal</h3>
-                    <p class="diary__card-desc">Hold your hand</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <img
-                      src="./assess/img/21_6.jpg"
-                      alt=""
-                      class="diary__preview-img"
-                    />
-                  </div>
-                </div>
-              </article>
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/calendar.png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">25/06/2025</p>
-                    <h3 class="diary__card-heading">First Month</h3>
-                    <p class="diary__card-desc">1st Month</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <img
-                      src="./assess/img/1month.jpg"
-                      alt=""
-                      class="diary__preview-img"
-                    />
-                  </div>
-                </div>
-              </article>
-              <article class="diary__card">
-                <div class="diary__card-inner">
-                  <div class="diary__card-front">
-                    <figure diary__card-wrap>
-                      <img
-                        src="./assess/icon/calendar.png"
-                        alt=""
-                        class="diary__card-img"
-                      />
-                    </figure>
-                    <p class="diary__card-day">25/07/2025</p>
-                    <h3 class="diary__card-heading">2 Months</h3>
-                    <p class="diary__card-desc">2 Month with Graduation</p>
-                  </div>
-                  <div class="diary__card-back">
-                    <img
-                      src="./assess/img/2month.jpg"
-                      alt=""
-                      class="diary__preview-img"
-                    />
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-          <a href="" class="btn diary__btn" title="Chưa hoàn thiện">Add More</a>
-        </div>
-      </section>
-      <section class="quote" id="quote" data-animate="animate__jackInTheBox">
-        <div class="quote__header">
-          <svg
-            viewBox="0 0 1440 320"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            class="quote__wave"
-          >
-            <path
-              fill="#ffffff"
-              d="M0,160 C480,260 960,60 1440,160 L1440,320 L0,320 Z"
-            ></path>
-          </svg>
-          <img src="./assess/icon/quotation.png" alt="" class="quote__icon" />
-        </div>
-        <div class="container">
-          <div class="quote__content">
-            <p class="quote__text"></p>
-          </div>
-          <p class="quote__author"></p>
-        </div>
-      </section>
-      <section class="gallery" id="gallery" data-animate="animate__rollIn">
-        <div class="container">
-          <h2 class="heading-section gallery__heading">Gallery</h2>
-          <p class="gallery__desc">
-            Every photo captures a heartbeat of love — moments that shaped our
-            journey together.
-          </p>
-
-          <div class="gallery__content">
-            <nav class="gallery__nav">
-              <div class="gallery__nav-item">
-                <input
-                  type="radio"
-                  name="tab"
-                  id="tab1"
-                  class="gallery__nav-input"
-                  checked
-                />
-                <label for="tab1" class="gallery__nav-label">Long</label>
-              </div>
-              <div class="gallery__nav-item">
-                <input
-                  type="radio"
-                  name="tab"
-                  id="tab2"
-                  class="gallery__nav-input"
-                />
-                <label for="tab2" class="gallery__nav-label">Huyen</label>
-              </div>
-              <div class="gallery__nav-item">
-                <input
-                  type="radio"
-                  name="tab"
-                  id="tab3"
-                  class="gallery__nav-input"
-                />
-                <label for="tab3" class="gallery__nav-label">Ours</label>
-              </div>
-              <div class="gallery__nav-item">
-                <input
-                  type="radio"
-                  name="tab"
-                  id="tab4"
-                  class="gallery__nav-input"
-                />
-                <label for="tab4" class="gallery__nav-label">All</label>
-              </div>
-            </nav>
-            <div class="gallery__tab gallery__tab-long show-on-mobile">
-              <div class="swiper gallerySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Long.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Long1.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Long2.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Long3.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Long4.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Long5.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination show-on-mobile"></div>
-
-                <!-- Navigation -->
-                <div class="swiper-button-prev show-on-mobile"></div>
-                <div class="swiper-button-next show-on-mobile"></div>
-              </div>
-            </div>
-            <div class="gallery__tab gallery__tab-long show-on-laptop">
-              <img src="./assess/img/Long.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Long1.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Long2.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Long3.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Long4.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Long5.jpg" alt="" class="gallery__img" />
-            </div>
-
-            <div class="gallery__tab gallery__tab-huyen show-on-laptop">
-              <img src="./assess/img/Huyen.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Huyen1.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Huyen2.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Huyen3.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/Huyen4.jpg" alt="" class="gallery__img" />
-            </div>
-            <div class="gallery__tab gallery__tab-huyen show-on-mobile">
-              <div class="swiper gallerySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Huyen.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Huyen1.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Huyen2.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Huyen3.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/Huyen4.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                </div>
-
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- Navigation -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-            </div>
-
-            <div class="gallery__tab gallery__tab-ours show-on-laptop">
-              <img src="./assess/img/NamTay.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/4_6Sapa.jpg" alt="" class="gallery__img" />
-              <img src="./assess/img/21_6.jpg" alt="" class="gallery__img" />
-              <img
-                src="./assess/img/FirstDay.jpg"
-                alt=""
-                class="gallery__img"
-              />
-              <img
-                src="./assess/img/holdhand.jpg"
-                alt=""
-                class="gallery__img"
-              />
-            </div>
-            <div class="gallery__tab gallery__tab-ours show-on-mobile">
-              <div class="swiper gallerySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/NamTay.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/4_6Sapa.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/21_6.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/FirstDay.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assess/img/holdhand.jpg"
-                      alt=""
-                      class="gallery__img"
-                    />
-                  </div>
-                </div>
-
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- Navigation -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-            </div>
-
-            <div class="gallery__tab gallery__tab-all" id="tab1">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="contact"
-        data-animate="animate__rotateInDownRight"
-        id="contact"
-      >
-        <div class="container">
-          <h2 class="heading-section">Send Letter</h2>
-          <p class="gallery__desc contact__desc">
-            Don't hesitate to reach out — whether it's a word, a thought, or
-            just a feeling. I'm always here, and I'd love to share a little
-            piece of love with you.
-          </p>
-
-          <div class="contact__card-list">
-            <div class="contact__card show-on-laptop">
-              <div class="contact__card-info">
-                <h3 class="contact__card-heading">Contact Information</h3>
-                <div class="contact__list">
-                  <div class="contact__item">
-                    <figure class="contact__icon-wrap">
-                      <i
-                        class="fa-solid fa-phone"
-                        style="color: #ffffff"
-                        class="contact__icon"
-                      ></i>
-                    </figure>
-                    <span class="contact__title">Phone:</span>
-                    <a href="tel:0979660325" class="contact__info"
-                      >0979660325</a
-                    >
-                  </div>
-                  <div class="contact__item">
-                    <figure class="contact__icon-wrap">
-                      <i
-                        class="fa-solid fa-envelope"
-                        style="color: #ffffff"
-                        class="contact__icon"
-                      ></i>
-                    </figure>
-                    <span class="contact__title">Email:</span>
-                    <a href="mailto:longprolc10@gmail.com" class="contact__info"
-                      >longprolc10@gmail.com</a
-                    >
-                  </div>
-                  <div class="contact__item">
-                    <figure class="contact__icon-wrap">
-                      <i
-                        class="fa-brands fa-facebook"
-                        style="color: #ffffff"
-                        class="contact__icon"
-                      ></i>
-                    </figure>
-                    <span class="contact__title">Facebook:</span>
-                    <a
-                      class="contact__info"
-                      href="https://www.facebook.com/longprolc10/"
-                      >Thành Long</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <form action="" id="discord-form" class="contact__card">
-              <h3 class="contact__card-heading">Whispers of the Heart</h3>
-              <textarea
-                name=""
-                id="message"
-                placeholder="Enter your message here..."
-                class="contact__content"
-                rows="10"
-                cols="50"
-              ></textarea>
-              <button
-                class="contact__btn animate__animated animate__bounce"
-                type="submit"
-              >
-                Send Message
-                <span class="btn__icon"
-                  ><i class="fa-solid fa-paper-plane" style="color: #ffffff"></i
-                ></span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <p class="footer__created">
-            <span class="prefix">Created by </span>
-            <span class="typing-text" id="typing"></span>
-          </p>
-          <div class="footer__social-list">
-            <a
-              href="https://www.facebook.com/longprolc10/"
-              class="footer__social-item"
-              target="_blank"
-            >
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/n.longg18/"
-              class="footer__social-item"
-              target="_blank"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.topcv.vn/xem-cv/VwMAClEBUlsDBF1SVgUGWQRcBwZVB1JYDFUEAwb775"
-              class="footer__social-item"
-              target="_blank"
-              ><i class="fa-solid fa-file"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/long-nguy%E1%BB%85n-10a577290/"
-              class="footer__social-item"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-          <nav class="navigation-bar show-on-laptop">
-            <ul class="nav-item">
-              <li class="item"><a href="#home" class="item-link">Home</a></li>
-              <li class="item">
-                <a href="#info" class="item-link">About Us</a>
-              </li>
-              <li class="item">
-                <a href="#diary" class="item-link">Our Story</a>
-              </li>
-              <li class="item"><a href="#quote" class="item-link">Quote</a></li>
-              <li class="item">
-                <a href="#gallery" class="item-link">Gallery</a>
-              </li>
-              <li class="item">
-                <a href="#contact" class="item-link">Send Message</a>
-              </li>
-            </ul>
-          </nav>
-          <p class="footer__copyright">
-            © 2025 n.longg1805. All Rights Reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-    <script>
-      // Hàm này dùng để tính toán và cập nhật lại số ngày hiển thị
-      function updateDaysCount(startDateString) {
-        const startDate = new Date(startDateString);
-        const today = new Date();
-
-        // Reset giờ về 00:00:00 để đảm bảo tính chính xác số ngày
-        startDate.setHours(0, 0, 0, 0);
-        today.setHours(0, 0, 0, 0);
-
-        // Tính toán khoảng thời gian
-        const diffTime = today - startDate;
-        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-
-        // Cập nhật số ngày lên màn hình
-        document.getElementById("daysCount").textContent = diffDays;
-      }
-
-      // Chạy code sau khi toàn bộ trang đã được tải
-      window.onload = function () {
-        const circle = document.getElementById("circleDate");
-        const dateInput = document.getElementById("startDateInput");
-
-        // --- NGÀY BẮT ĐẦU MẶC ĐỊNH ---
-        const defaultStartDate = "2025-05-25"; // <<<< Thay đổi ngày kỷ niệm của bạn ở đây
-
-        // Hiển thị số ngày mặc định khi tải trang
-        updateDaysCount(defaultStartDate);
-
-        // 1. Khi người dùng nhấn vào vòng tròn
-        circle.onclick = function () {
-          dateInput.click(); // Giả lập một cú nhấp chuột vào thẻ input bị ẩn
-        };
-
-        // 2. Khi người dùng chọn một ngày mới từ date picker
-        dateInput.onchange = function () {
-          updateDaysCount(this.value); // 'this.value' chính là ngày người dùng vừa chọn
-        };
-      };
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const skillProgressBars = document.querySelectorAll(
-          ".info__skill-progress"
-        );
-
-        skillProgressBars.forEach((bar) => {
-          const progressValue = bar.dataset.progress; // Lấy giá trị từ data-progress, ví dụ "78%"
-          bar.style.setProperty("--progress-width", progressValue); // Gán giá trị này vào biến CSS --progress-width
-        });
-      });
-    </script>
-    <script>
-      const checkbox = document.getElementById("info-switch");
-      const infoHuyen = document.querySelector(".info__inner-huyen");
-      const infoLong = document.querySelector(".info__inner-long");
-
-      function toggleInfo() {
-        if (checkbox.checked) {
-          infoHuyen.classList.remove("active");
-          infoLong.classList.add("active");
-        } else {
-          infoLong.classList.remove("active");
-          infoHuyen.classList.add("active");
+    
+    <!-- GLightbox Lightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
         }
-      }
-
-      checkbox.addEventListener("change", toggleInfo);
-
-      // Gọi lúc đầu để thiết lập trạng thái ban đầu
-      toggleInfo();
-    </script>
-    <script>
-      const sliders = document.querySelectorAll(".love-slider");
-
-      sliders.forEach((slider) => {
-        const update = () => {
-          const value = slider.value;
-          slider.style.setProperty("--value", `${value}%`);
-        };
-        slider.addEventListener("input", update);
-        update(); // chạy lúc load
-      });
-    </script>
-    <script>
-      const quotes = [
-        {
-          text: "Love is not about how many days, months, or years you’ve been together.",
-          author: "Unknown",
-        },
-        {
-          text: "In your smile, I see something more beautiful than the stars.",
-          author: "Beth Revis",
-        },
-        {
-          text: "Every love story is beautiful, but ours is my favorite.",
-          author: "Unknown",
-        },
-        {
-          text: "You’re the one I’ve been waiting for, the missing piece to my puzzle.",
-          author: "Unknown",
-        },
-        {
-          text: "You’re my today and all of my tomorrows.",
-          author: "Leo Christopher",
-        },
-      ];
-
-      const index = Math.floor(Math.random() * quotes.length);
-      const quote = quotes[index];
-
-      // Tạo HTML cho phần quote text
-      const quoteTextElement = document.querySelector(".quote__text");
-      quoteTextElement.innerHTML = `
-      
-      "${quote.text}"`;
-
-      // Gán author
-      document.querySelector(".quote__author").innerText = `– ${quote.author}`;
-    </script>
-    <script>
-      const inputs = document.querySelectorAll(".gallery__nav-input");
-      const tabs = document.querySelectorAll(".gallery__tab");
-
-      const tabMap = {
-        tab1: "gallery__tab-long",
-        tab2: "gallery__tab-huyen",
-        tab3: "gallery__tab-ours",
-        tab4: "gallery__tab-all",
-      };
-
-      inputs.forEach((input) => {
-        input.addEventListener("change", () => {
-          // 1. Ẩn tất cả các tab
-          tabs.forEach((tab) => tab.classList.remove("active"));
-
-          // 2. Lấy class của tab cần hiện
-          const selectedId = input.id;
-          const tabClass = tabMap[selectedId];
-
-          // 3. Tìm *TẤT CẢ* các tab (cả mobile và laptop) có class đó và active chúng
-          const selectedTabs = document.querySelectorAll(`.${tabClass}`);
-          selectedTabs.forEach((tab) => {
-            tab.classList.add("active");
-          });
-        });
-      });
-
-      // Khởi tạo tab mặc định khi load trang
-      window.addEventListener("DOMContentLoaded", () => {
-        const checkedInput = document.querySelector(
-          ".gallery__nav-input:checked"
-        );
-        if (checkedInput) {
-          checkedInput.dispatchEvent(new Event("change"));
+        
+        .dancing-script {
+            font-family: 'Dancing Script', cursive;
         }
-      });
-    </script>
-    <script>
-      const form = document.getElementById("discord-form");
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const message = document.getElementById("message").value;
-
-        const webhookURL =
-          "https://discord.com/api/webhooks/1399293230788509836/ba-fwq4oOV8UZoxMMgg8mlPIX69hq42fUzyziJW2pctsPn7Jcb0pLWj4KxMSIOF1DAHA";
-
-        fetch(webhookURL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            content: message,
-          }),
-        })
-          .then((res) => {
-            if (res.ok) {
-              alert("✅ Tin nhắn đã gửi lên Discord!");
-              form.reset();
-            } else {
-              alert("❌ Gửi thất bại.");
+        
+        :root {
+            --pastel-pink: #FFD1DC;
+            --pastel-pink-dark: #FFC4D1;
+            --creamy-white: #FFFBF7;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--creamy-white) 0%, rgba(255, 209, 220, 0.15) 50%, #fff 100%);
+            min-height: 100vh;
+            color: #444;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* ===== ORGANIC BLOB SHAPES ===== */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 182, 193, 0.3) 0%, transparent 70%);
+            border-radius: 35% 65% 42% 58% / 58% 38% 62% 42%;
+            animation: blob 8s ease-in-out infinite;
+            z-index: -1;
+        }
+        
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: -30%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 209, 220, 0.25) 0%, transparent 70%);
+            border-radius: 45% 55% 60% 40% / 30% 50% 50% 70%;
+            animation: blob 10s ease-in-out infinite reverse;
+            z-index: -1;
+        }
+        
+        @keyframes blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(20px, -50px) scale(1.05); }
+            50% { transform: translate(-20px, 20px) scale(0.95); }
+            75% { transform: translate(50px, 50px) scale(1.02); }
+        }
+        
+        /* ===== HEADER RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            .header {
+                position: sticky;
+                top: 0;
+                z-index: 50;
+                background: rgba(255, 251, 247, 0.95);
+                backdrop-filter: blur(15px);
+                padding: 0.75rem 0;
             }
-          })
-          .catch((err) => {
-            console.error("Lỗi khi gửi Discord:", err);
-            alert("❌ Lỗi kết nối.");
-          });
-      });
-    </script>
-    <script>
-      const texts = ["Thanh Long", "n.longg1805"];
-      let count = 0;
-      let index1 = 0;
-      let currentText = "";
-      let letter = "";
-      let isDeleting = false;
-
-      function type() {
-        currentText = texts[count % texts.length];
-
-        if (isDeleting) {
-          letter = currentText.substring(0, index1--);
-        } else {
-          letter = currentText.substring(0, index1++);
+            
+            .dancing-script.text-3xl {
+                font-size: 1.25rem;
+            }
+            
+            #langToggle {
+                padding: 0.375rem 0.75rem;
+                font-size: 0.75rem;
+            }
+            
+            nav.container {
+                padding: 0.5rem 1rem !important;
+            }
         }
-
-        document.getElementById("typing").textContent = letter;
-
-        let speed = isDeleting ? 60 : 120;
-
-        if (!isDeleting && index1 === currentText.length + 1) {
-          speed = 1500;
-          isDeleting = true;
-        } else if (isDeleting && index1 === 0) {
-          isDeleting = false;
-          count++;
-          speed = 500;
+        
+        @media (min-width: 641px) and (max-width: 768px) {
+            .header {
+                position: sticky;
+                top: 0;
+                z-index: 50;
+                background: rgba(255, 251, 247, 0.9);
+                backdrop-filter: blur(18px);
+            }
+            
+            .dancing-script.text-3xl {
+                font-size: 1.75rem;
+            }
         }
+        
+        /* ===== HEADER GLASSMORPHISM ===== */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 251, 247, 0.75);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 209, 220, 0.2);
+            box-shadow: 0 4px 30px rgba(255, 209, 220, 0.1);
+        }
+        
+        /* ===== PARTICLE EFFECT ===== */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 209, 220, 0.3);
+            border-radius: 50%;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) translateX(0); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) translateX(30px); opacity: 0; }
+        }
+        
+        /* ===== SOFT SHADOW ===== */
+        .soft-shadow {
+            box-shadow: 0 10px 40px rgba(255, 209, 220, 0.2),
+                        0 0 60px rgba(255, 209, 220, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .soft-shadow:hover {
+            box-shadow: 0 20px 60px rgba(255, 209, 220, 0.3),
+                        0 0 80px rgba(255, 209, 220, 0.15);
+        }
+        
+        /* ===== FLOATING EFFECT ===== */
+        .float {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        /* ===== PROFILE IMAGE ===== */
+        .profile-img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--creamy-white);
+            aspect-ratio: 1;
+            box-sizing: border-box;
+            display: block;
+        }
+        
+        .profile-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(255, 105, 180, 0.3), rgba(255, 182, 193, 0.2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(255, 209, 220, 0.4), 0 0 60px rgba(255, 105, 180, 0.2);
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 640px) {
+            .profile-img-wrapper {
+                width: 100px;
+                height: 100px;
+                box-shadow: 0 0 15px rgba(255, 209, 220, 0.3), 0 0 30px rgba(255, 105, 180, 0.15);
+            }
+        }
+        
+        @media (min-width: 641px) and (max-width: 768px) {
+            .profile-img-wrapper {
+                width: 130px;
+                height: 130px;
+                box-shadow: 0 0 20px rgba(255, 209, 220, 0.35), 0 0 40px rgba(255, 105, 180, 0.18);
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .profile-img-wrapper {
+                width: 150px;
+                height: 150px;
+                box-shadow: 0 0 25px rgba(255, 209, 220, 0.38), 0 0 50px rgba(255, 105, 180, 0.2);
+            }
+        }
+        
+        .profile-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        /* ===== COUNTER CONTAINER ===== */
+        .counter-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            padding: 0 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .counter-container {
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .counter-container {
+                gap: 1.5rem;
+                margin-top: 2.5rem;
+            }
+        }
+        
+        .counter-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            animation: slideUp 0.8s ease-out;
+            max-width: 100px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .counter-item {
+                max-width: none;
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .counter-bubble {
+            position: relative;
+            width: 100%;
+            aspect-ratio: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            transition: all 0.3s ease;
+            overflow: visible;
+        }
+        
+        @media (min-width: 768px) {
+            .counter-bubble {
+                aspect-ratio: 1;
+                background: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(20px) saturate(180%);
+                border: 1.5px solid rgba(255, 255, 255, 0.8);
+                border-radius: 30px;
+                box-shadow: 
+                    0 8px 32px rgba(255, 105, 180, 0.15),
+                    inset 0 0 32px rgba(255, 255, 255, 0.5),
+                    inset 0 0 20px rgba(255, 182, 193, 0.1);
+                overflow: hidden;
+            }
+        }
+        
+        .counter-bubble::before {
+            display: none;
+        }
+        
+        @media (min-width: 768px) {
+            .counter-bubble::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent);
+                border-radius: 30px;
+                pointer-events: none;
+                display: block;
+            }
+        }
+        
+        .counter-bubble:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (min-width: 768px) {
+            .counter-bubble:hover {
+                background: rgba(255, 255, 255, 0.8);
+                border-color: rgba(255, 209, 220, 1);
+                box-shadow: 
+                    0 15px 45px rgba(255, 105, 180, 0.25),
+                    inset 0 0 40px rgba(255, 255, 255, 0.6),
+                    inset 0 0 25px rgba(255, 182, 193, 0.15),
+                    0 0 60px rgba(255, 105, 180, 0.15);
+                transform: translateY(-5px) scale(1.02);
+            }
+        }
+        
+        .counter-bubble .counter-number {
+            position: relative;
+            z-index: 2;
+            font-weight: 800;
+            font-size: clamp(1rem, 4vw, 2.5rem);
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .counter-label {
+            text-align: center;
+            color: #ff69b4;
+            font-weight: 600;
+            font-size: clamp(0.55rem, 2.5vw, 0.85rem);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        
+        .counter-item:hover .counter-label {
+            color: #ff1493;
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 640px) {
+            .counter-bubble {
+                border-radius: 25px;
+                box-shadow: 
+                    0 6px 24px rgba(255, 105, 180, 0.12),
+                    inset 0 0 24px rgba(255, 255, 255, 0.4),
+                    inset 0 0 15px rgba(255, 182, 193, 0.08);
+            }
+            
+            .counter-label {
+                font-size: 0.65rem;
+            }
+        }
+        
+        /* ===== TIMELINE ===== */
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 209, 220, 0.3), rgba(255, 209, 220, 0.8), rgba(255, 209, 220, 0.3));
+        }
+        
+        .timeline-item {
+            margin-bottom: 4rem;
+            width: 50%;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+            padding-right: 5%;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) {
+            margin-left: 50%;
+            padding-left: 5%;
+            text-align: left;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            border: 4px solid var(--creamy-white);
+            border-radius: 50%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 0 4px rgba(255, 209, 220, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item:hover .timeline-dot {
+            width: 28px;
+            height: 28px;
+            box-shadow: 0 0 0 8px rgba(255, 209, 220, 0.3),
+                        0 0 20px rgba(255, 105, 180, 0.5);
+        }
+        
+        /* ===== MASONRY GALLERY ===== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            grid-auto-rows: 250px;
+        }
+        
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 105, 180, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-overlay i {
+            font-size: 2rem;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery-overlay-text {
+            color: white;
+            font-size: 0.875rem;
+            text-align: center;
+            font-weight: 500;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            max-width: 90%;
+        }
+        
+        /* ===== ENVELOPE ANIMATION ===== */
+        @keyframes envelope {
+            0% {
+                transform: rotateX(0deg) scale(1);
+            }
+            40% {
+                transform: rotateX(-30deg) scale(0.95);
+            }
+            80% {
+                transform: rotateX(30deg) scale(0.95);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg) scale(1);
+            }
+        }
+        
+        .envelope-animation {
+            animation: envelope 0.8s ease-in-out;
+        }
+        
+        /* ===== HEARTBEAT ANIMATION ===== */
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            14% {
+                transform: scale(1.15);
+            }
+            28% {
+                transform: scale(1);
+            }
+            42% {
+                transform: scale(1.15);
+            }
+            56% {
+                transform: scale(1);
+            }
+        }
+        
+        .heart-hero {
+            animation: heartbeat 1.2s ease-in-out infinite;
+        }
+        
+        @media (max-width: 640px) {
+            .heart-hero {
+                font-size: 2rem !important;
+            }
+        }
+        
+        @media (min-width: 641px) and (max-width: 768px) {
+            .heart-hero {
+                font-size: 3rem !important;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .heart-hero {
+                font-size: 4rem !important;
+            }
+        }
+        
+        /* ===== FORM STYLING ===== */
+        .form-input, .form-textarea {
+            background: rgba(255, 251, 247, 0.8);
+            border: 2px solid rgba(255, 209, 220, 0.3);
+            border-radius: 15px;
+            padding: 0.875rem 1.25rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--pastel-pink);
+            background: rgba(255, 251, 247, 1);
+            box-shadow: 0 0 0 3px rgba(255, 209, 220, 0.2);
+        }
+        
+        /* ===== BUTTON ===== */
+        .btn-primary {
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 105, 180, 0.5);
+        }
+        
+        .btn-primary:active {
+            transform: translateY(-2px);
+        }
+        
+        /* ===== HERO SECTION RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            section#home {
+                padding-top: 2rem !important;
+                padding-bottom: 2rem;
+            }
+            
+            .container.mx-auto > .grid {
+                gap: 2rem !important;
+            }
+            
+            h1.dancing-script {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            
+            section#home p {
+                font-size: 0.875rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+        
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 5rem 2rem;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            white-space: nowrap;
+        }
+        
+        .section-subtitle {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: #888;
+            margin-bottom: 3rem;
+        }
+        
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            section {
+                padding: 1.5rem 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+                white-space: normal;
+                margin-bottom: 0.5rem;
+            }
+            
+            .section-subtitle {
+                font-size: 0.875rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            h1.dancing-script {
+                font-size: 2rem !important;
+            }
+            
+            h3.dancing-script {
+                font-size: 1.5rem !important;
+            }
+            
+            .timeline {
+                position: relative;
+                padding: 1rem 0 1rem 40px;
+            }
+            
+            .timeline::before {
+                content: '';
+                position: absolute;
+                left: 12px;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba(255, 209, 220, 0.3), rgba(255, 209, 220, 0.8), rgba(255, 209, 220, 0.3));
+            }
+            
+            .timeline-item {
+                width: 100% !important;
+                margin-bottom: 2rem;
+                padding-left: 30px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+                margin-left: 0 !important;
+            }
+            
+            .timeline-item:nth-child(odd) {
+                padding-left: 30px !important;
+                text-align: left !important;
+            }
+            
+            .timeline-item:nth-child(even) {
+                padding-left: 30px !important;
+                text-align: left !important;
+            }
+            
+            .timeline-dot {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                left: 0;
+                top: 8px;
+                transform: translateX(0);
+                box-shadow: 0 0 0 3px rgba(255, 209, 220, 0.2);
+            }
+            
+            .timeline-item:hover .timeline-dot {
+                width: 20px;
+                height: 20px;
+                left: -2px;
+                top: 6px;
+                box-shadow: 0 0 0 5px rgba(255, 209, 220, 0.3),
+                            0 0 15px rgba(255, 105, 180, 0.5);
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 120px;
+                gap: 8px;
+            }
+            
+            .btn-primary {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .form-input,
+            .form-textarea {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (min-width: 641px) and (max-width: 1024px) {
+            section {
+                padding: 3rem 2rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            h1.dancing-script {
+                font-size: 4rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 220px;
+                gap: 18px;
+            }
+            
+            .grid.grid-cols-2 {
+                gap: 2rem !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 1.5rem;
+            }
+            
+            .timeline {
+                position: relative;
+                padding: 1.5rem 0 1.5rem 45px;
+            }
+            
+            .timeline::before {
+                left: 18px;
+                width: 2px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 45px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+                margin-bottom: 2.5rem;
+                margin-left: 0 !important;
+            }
+            
+            .timeline-item:nth-child(odd) {
+                padding-left: 45px !important;
+                text-align: left !important;
+            }
+            
+            .timeline-item:nth-child(even) {
+                padding-left: 45px !important;
+                text-align: left !important;
+            }
+            
+            .timeline-dot {
+                left: 0;
+                top: 8px;
+                width: 18px;
+                height: 18px;
+                transform: translateX(0);
+                box-shadow: 0 0 0 3px rgba(255, 209, 220, 0.2);
+            }
+            
+            .timeline-item:hover .timeline-dot {
+                width: 24px;
+                height: 24px;
+                left: -3px;
+                top: 5px;
+                box-shadow: 0 0 0 5px rgba(255, 209, 220, 0.3),
+                            0 0 15px rgba(255, 105, 180, 0.5);
+            }
+            
+            .gallery-grid {
+                grid-auto-rows: 200px;
+                gap: 15px;
+            }
+            
+            .profile-img {
+                border-radius: 20px;
+                border: 6px solid var(--creamy-white);
+            }
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
 
-        setTimeout(type, speed);
-      }
-
-      // Đảm bảo hàm chạy sau khi DOM sẵn sàng
-      document.addEventListener("DOMContentLoaded", type);
-    </script>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container mx-auto max-w-6xl px-4 py-4 flex justify-between items-center">
+            <div class="dancing-script text-3xl font-bold bg-gradient-to-r from-pink-500 to-red-500 bg-clip-text text-transparent">
+                💕 Dương & Nga
+            </div>
+            
+            <ul class="hidden md:flex gap-8 text-gray-700">
+                <li><a href="#home" class="hover:text-pink-500 transition font-medium" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" class="hover:text-pink-500 transition font-medium" data-i18n="nav_about">About</a></li>
+                <li><a href="#story" class="hover:text-pink-500 transition font-medium" data-i18n="nav_story">Story</a></li>
+                <li><a href="#gallery" class="hover:text-pink-500 transition font-medium" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="#contact" class="hover:text-pink-500 transition font-medium" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            
+            <div class="flex gap-4 items-center">
+                <button id="langToggle" class="px-3 py-2 rounded-lg bg-pink-100 text-pink-600 hover:bg-pink-200 transition font-semibold text-sm md:text-base">
+                    <span id="langText">Tiếng Việt</span>
+                </button>
+                <button class="md:hidden text-2xl" id="mobileMenuBtn">
+                    <i class="fas fa-bars text-pink-500"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden fixed inset-0 top-16 bg-white z-40 md:hidden">
+        <ul class="flex flex-col gap-4 p-6">
+            <li><a href="#home" class="block p-2 hover:text-pink-500 font-medium">Home</a></li>
+            <li><a href="#about" class="block p-2 hover:text-pink-500 font-medium">About</a></li>
+            <li><a href="#story" class="block p-2 hover:text-pink-500 font-medium">Story</a></li>
+            <li><a href="#gallery" class="block p-2 hover:text-pink-500 font-medium">Gallery</a></li>
+            <li><a href="#contact" class="block p-2 hover:text-pink-500 font-medium">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="pt-8 md:pt-20 px-4 relative overflow-hidden" data-aos="fade-up">
+            <div class="particles" id="particles"></div>
+            
+            <div class="container mx-auto max-w-6xl relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+                    <div class="animate__animated animate__fadeInLeft w-full">
+                        <h1 class="dancing-script text-4xl sm:text-5xl md:text-7xl font-bold text-pink-500 mb-3 sm:mb-4 leading-tight" data-i18n="hero_title">
+                            We're In Love
+                        </h1>
+                        <p class="text-gray-600 text-sm sm:text-base md:text-xl mb-6 sm:mb-8 leading-relaxed" data-i18n="hero_subtitle">
+                            A beautiful journey that started with a simple moment and blossomed into forever...
+                        </p>
+                        
+                        <div class="counter-container">
+                            <div class="counter-item">
+                                <div class="counter-bubble">
+                                    <div class="counter-number text-3xl sm:text-4xl md:text-5xl" id="days">0</div>
+                                </div>
+                                <p class="counter-label" data-i18n="counter_days">Days</p>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-bubble">
+                                    <div class="counter-number text-3xl sm:text-4xl md:text-5xl" id="hours">00</div>
+                                </div>
+                                <p class="counter-label" data-i18n="counter_hours">Hours</p>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-bubble">
+                                    <div class="counter-number text-3xl sm:text-4xl md:text-5xl" id="minutes">00</div>
+                                </div>
+                                <p class="counter-label" data-i18n="counter_minutes">Min</p>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-bubble">
+                                    <div class="counter-number text-3xl sm:text-4xl md:text-5xl" id="seconds">00</div>
+                                </div>
+                                <p class="counter-label" data-i18n="counter_seconds">Sec</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="animate__animated animate__fadeInRight flex justify-center w-full -mt-4 sm:-mt-2 md:mt-0">
+                        <div class="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 relative w-full max-w-sm md:max-w-none">
+                            <div class="flex flex-col items-center float">
+                                <div class="profile-img-wrapper mb-2 sm:mb-3">
+                                    <img src="./assess/img/image 106.png" alt="Nga" class="profile-img">
+                                </div>
+                                <p class="text-center text-pink-600 font-bold text-sm sm:text-base md:text-lg">Nga </p>
+                            </div>
+                            
+                            <!-- Heart decoration in the middle -->
+                            <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                                <i class="fas fa-heart text-pink-500 text-3xl sm:text-5xl md:text-6xl heart-hero" style="filter: drop-shadow(0 0 20px rgba(255, 105, 180, 0.8)) drop-shadow(0 0 40px rgba(255, 105, 180, 0.4)); text-shadow: 0 0 20px rgba(255, 105, 180, 0.6);"></i>
+                            </div>
+                            
+                            <div class="flex flex-col items-center float" style="animation-delay: 0.3s;">
+                                <div class="profile-img-wrapper mb-2 sm:mb-3">
+                                    <img src="./assess/img/image 107.png" alt="Dương" class="profile-img">
+                                </div>
+                                <p class="text-center text-blue-600 font-bold text-sm sm:text-base md:text-lg">Duong </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="about" class="bg-gradient-to-b from-transparent via-white to-transparent" data-aos="fade-up">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="section-title dancing-script text-center" data-i18n="about_title">About Us</h2>
+                <p class="section-subtitle text-center" data-i18n="about_subtitle">Our beautiful story in two hearts...</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 relative">
+                    <div class="flex flex-col items-center bg-white bg-opacity-50 backdrop-blur-sm p-8 md:p-10 rounded-3xl soft-shadow" data-aos="zoom-in">
+                        <div class="profile-img-wrapper mb-8">
+                            <img src="./assess/img/IMG_0155.JPG" alt="Nga" class="profile-img">
+                        </div>
+                        <h3 class="dancing-script text-3xl md:text-4xl font-bold text-center text-pink-600 mb-2">
+                            Đỗ Huyền Nga
+                        </h3>
+                        <p class="text-center text-gray-700 font-semibold text-lg mb-4">Em É ✨</p>
+                        <p class="flex items-center justify-center gap-2 mb-4 text-gray-700">
+                            <i class="fas fa-birthday-cake text-pink-500"></i>
+                            <span>05/01/2007</span>
+                        </p>
+                        <p class="italic text-pink-500 font-medium mb-6 text-center max-w-xs" data-i18n="about_nga_quote">"My heart is, and always will be, yours"</p>
+                        <p class="text-sm text-gray-600 leading-relaxed text-center" data-i18n="about_nga_desc">
+                            You are the one who makes everything feel possible. Thank you for being my strength, my joy, and my greatest blessing. I love you.💕
+                        </p>
+                    </div>
+                    
+                    <!-- Heart decoration in the middle -->
+                    <div class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <i class="fas fa-heart text-pink-400 text-4xl animate-pulse" style="filter: drop-shadow(0 0 10px rgba(255, 193, 207, 0.6));"></i>
+                    </div>
+                    
+                    <div class="flex flex-col items-center bg-white bg-opacity-50 backdrop-blur-sm p-8 md:p-10 rounded-3xl soft-shadow" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="profile-img-wrapper mb-8">
+                            <img src="./assess/img/Duong.jpg" alt="Dương" class="profile-img">
+                        </div>
+                        <h3 class="dancing-script text-3xl md:text-4xl font-bold text-center text-blue-600 mb-2">
+                            Nguyễn Hải Dương
+                        </h3>
+                        <p class="text-center text-gray-700 font-semibold text-lg mb-4">Em Bill 💙</p>
+                        <p class="flex items-center justify-center gap-2 mb-4 text-gray-700">
+                            <i class="fas fa-birthday-cake text-blue-500"></i>
+                            <span>05/08/2004</span>
+                        </p>
+                        <p class="italic text-blue-500 font-medium mb-6 text-center max-w-xs" data-i18n="about_duong_quote">"Every heartbeat leads me back to you"</p>
+                        <p class="text-sm text-gray-600 leading-relaxed text-center" data-i18n="about_duong_desc">
+                            My world is brighter with you by my side. Thank you for being my peace, my home, and my greatest adventure. I love you endlessly. 💙
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Story Timeline -->
+        <section id="story" class="bg-gradient-to-b from-pink-50 to-white" data-aos="fade-up">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="section-title dancing-script text-center" data-i18n="story_title">Our Love Story</h2>
+                <p class="section-subtitle text-center" data-i18n="story_subtitle">Milestones that shaped our forever...</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 md:p-8 rounded-2xl soft-shadow">
+                            <h4 class="dancing-script text-2xl font-bold text-pink-600 mb-3" data-i18n="timeline_title_1">That First Message</h4>
+                            <p class="text-gray-700 leading-relaxed" data-i18n="timeline_desc_1">That first message was the spark that ignited our beautiful love story.</p>
+                            <p class="text-xs text-pink-500 mt-3 italic">30/07/2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 md:p-8 rounded-2xl soft-shadow">
+                            <h4 class="dancing-script text-2xl font-bold text-pink-600 mb-3" data-i18n="timeline_title_2">Our First Meeting</h4>
+                            <p class="text-gray-700 leading-relaxed" data-i18n="timeline_desc_2">We finally met in person when I brought butter and cooked Sweet and Sour Pork Ribs for you—and it felt like coming home.</p>
+                            <p class="text-xs text-pink-500 mt-3 italic">08/08/2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 md:p-8 rounded-2xl soft-shadow">
+                            <h4 class="dancing-script text-2xl font-bold text-pink-600 mb-3" data-i18n="timeline_title_3">The Confession</h4>
+                            <p class="text-gray-700 leading-relaxed" data-i18n="timeline_desc_3">By the tranquil shores of West Lake, you opened your heart and confessed your love to me.</p>
+                            <p class="text-xs text-pink-500 mt-3 italic">08/09/2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 md:p-8 rounded-2xl soft-shadow">
+                            <h4 class="dancing-script text-2xl font-bold text-pink-600 mb-3" data-i18n="timeline_title_4">Forever Starts Now</h4>
+                            <p class="text-gray-700 leading-relaxed" data-i18n="timeline_desc_4">Every day with you is a blessing. Our greatest adventure is just beginning.</p>
+                            <p class="text-xs text-pink-500 mt-3 italic">Bây giờ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section id="gallery" class="bg-white bg-opacity-50" data-aos="fade-up">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="section-title dancing-script text-center" data-i18n="gallery_title">Our Moments</h2>
+                <p class="section-subtitle text-center" data-i18n="gallery_subtitle">Every photo is a heartbeat of our love story...</p>
+                
+                <div class="gallery-grid">
+                    <a href="./assess/img/landau.jpg" class="glightbox gallery-item" data-gallery="gallery">
+                        <img src="./assess/img/landau.jpg" alt="Memory 1">
+                        <div class="gallery-overlay"><i class="fas fa-heart"></i><span class="gallery-overlay-text" data-i18n="gallery_desc_1">The first message to you</span></div>
+                    </a>
+                    <a href="./assess/img/2.jpg" class="glightbox gallery-item" data-gallery="gallery">
+                        <img src="./assess/img/2.jpg" alt="Memory 2">
+                        <div class="gallery-overlay"><i class="fas fa-heart"></i><span class="gallery-overlay-text" data-i18n="gallery_desc_2">The first gift for you</span></div>
+                    </a>
+                    <a href="./assess/img/3.jpg" class="glightbox gallery-item" data-gallery="gallery">
+                        <img src="./assess/img/3.jpg" alt="Memory 3">
+                        <div class="gallery-overlay"><i class="fas fa-heart"></i><span class="gallery-overlay-text" data-i18n="gallery_desc_3">The first day we fell in love</span></div>
+                    </a>
+                    <a href="./assess/img/4.jpg" class="glightbox gallery-item" data-gallery="gallery">
+                        <img src="./assess/img/4.jpg" alt="Memory 4">
+                        <div class="gallery-overlay"><i class="fas fa-heart"></i><span class="gallery-overlay-text" data-i18n="gallery_desc_4">Ordinary photo 1</span></div>
+                    </a>
+                    <a href="./assess/img/5.jpg" class="glightbox gallery-item" data-gallery="gallery">
+                        <img src="./assess/img/5.jpg" alt="Memory 5">
+                        <div class="gallery-overlay"><i class="fas fa-heart"></i><span class="gallery-overlay-text" data-i18n="gallery_desc_5">Ordinary photo 2</span></div>
+                    </a>
+                    <a href="./assess/img/6.jpg" class="glightbox gallery-item" data-gallery="gallery">
+                        <img src="./assess/img/6.jpg" alt="Memory 6">
+                        <div class="gallery-overlay"><i class="fas fa-heart"></i><span class="gallery-overlay-text" data-i18n="gallery_desc_6">Ordinary photo 3</span></div>
+                    </a>
+                    <a href="./assess/img/7.jpg" class="glightbox gallery-item" data-gallery="gallery">
+                        <img src="./assess/img/7.jpg" alt="Memory 7">
+                        <div class="gallery-overlay"><i class="fas fa-heart"></i><span class="gallery-overlay-text" data-i18n="gallery_desc_7">The "charity" meal</span></div>
+                    </a>
+                     <a href="./assess/img/8.jpg" class="glightbox gallery-item" data-gallery="gallery">
+                        <img src="./assess/img/8.jpg" alt="Memory 8">
+                        <div class="gallery-overlay"><i class="fas fa-heart"></i><span class="gallery-overlay-text" data-i18n="gallery_desc_8">Together forever</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gradient-to-b from-white to-pink-50" data-aos="fade-up">
+            <div class="container mx-auto max-w-2xl">
+                <h2 class="section-title dancing-script text-center" data-i18n="contact_title">Send us a Message</h2>
+                <p class="section-subtitle text-center" data-i18n="contact_subtitle">We'd love to hear from you...</p>
+                
+                <form id="contactForm" class="space-y-6 bg-white p-8 rounded-3xl soft-shadow">
+                    <textarea id="messageInput" placeholder="Gửi lời nhắn cho chúng tôi..." rows="6" class="form-textarea w-full" required></textarea>
+                    <button type="submit" class="btn-primary w-full flex items-center justify-center gap-2">
+                        <i class="fas fa-heart"></i>
+                        <span data-i18n="contact_send">Send Love Message</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-white bg-opacity-80 backdrop-blur-md py-8 md:py-12 border-t border-pink-200">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center">
+                <p class="dancing-script text-3xl md:text-4xl text-pink-500 mb-2">Dương & Nga</p>
+                <p class="text-gray-600 mb-4">Made with <i class="fas fa-heart text-pink-500 animate-pulse"></i> for our love story</p>
+                <div class="flex justify-center gap-6 text-sm md:text-base flex-wrap">
+                    <a href="#home" class="text-gray-600 hover:text-pink-500 transition">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-pink-500 transition">About</a>
+                    <a href="#story" class="text-gray-600 hover:text-pink-500 transition">Story</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-pink-500 transition">Gallery</a>
+                    <a href="#contact" class="text-gray-600 hover:text-pink-500 transition">Contact</a>
+                </div>
+                <p class="text-gray-500 text-xs mt-6">© 2024-2025 Our Love Story. All moments cherished. 💕</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                const el = entry.target;
-                const animation = el.dataset.animate;
+        // ============ TELEGRAM CONFIGURATION ============
+        const TELEGRAM_CONFIG = {
+            BOT_TOKEN: "8188463035:AAEQtz13139Qsnmb_Gzgb18NU5m2u9VibOM",
+            CHAT_ID: "1898063540",
+        };
 
-                el.classList.add("animate__animated", animation);
-                observer.unobserve(el); // chỉ chạy 1 lần
-              }
+        // ============ PARTICLE EFFECT ============
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const particleCount = 20;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+        
+        // ============ TRANSLATIONS ============
+        const translations = {
+            vi: {
+                nav_home: 'Trang Chủ',
+                nav_about: 'Về Chúng Tôi',
+                nav_story: 'Câu Chuyện',
+                nav_gallery: 'Thư Viện',
+                nav_contact: 'Liên Hệ',
+                hero_title: 'Duong & Nga',
+                hero_subtitle: 'Một tình yêu tuyệt đẹp bắt đầu từ một khoảnh khắc đơn giản...',
+                counter_days: 'Ngày',
+                counter_hours: 'Giờ',
+                counter_minutes: 'Phút',
+                counter_seconds: 'Giây',
+                about_title: 'Về Chúng Tôi',
+                about_subtitle: 'Câu chuyện tuyệt đẹp của hai trái tim...',
+                about_nga_quote: '"Trái tim anh là, và mãi mãi sẽ là, của em"',
+                about_nga_desc: 'Anh là người khiến em cảm thấy mọi thứ đều có thể. Cảm ơn anh đã là sức mạnh, là niềm vui và là phước lành lớn nhất của em. Em yêu anh.💕',
+                about_duong_quote: '"Mỗi nhịp tim đều dẫn anh trở lại với em"',
+                about_duong_desc: 'Thế giới của anh rạng rỡ hơn khi có em bên cạnh. Cảm ơn em vì đã là bình yên, là nhà, và là cuộc phiêu lưu tuyệt vời nhất. Yêu em. 💙',
+                story_title: 'Câu Chuyện Tình Yêu',
+                story_subtitle: 'Những khoảng khắc của tình yêu...',
+                timeline_title_1: 'Tin Nhắn Đầu Tiên',
+                timeline_desc_1: 'Tin nhắn đầu tiên ấy đã là tia lửa châm ngòi cho chuyện tình đẹp của chúng ta.',
+                timeline_title_2: 'Lần Gặp Mặt Đầu Tiên',
+                timeline_desc_2: 'Lần đầu tiên gặp nhau trực tiếp là khi anh mang bơ đến cho em và  nấu cho em món "Sườn xào chua ngọt"',
+                timeline_title_3: 'Lời Tỏ Tình',
+                timeline_desc_3: 'Sau buổi đi chơi ở hồ Tây, anh đã tỏ tình và em đã mở lòng và cho anh cơ hội yêu em.',
+                timeline_title_4: 'Câu chuyện chỉ mới bắt đầu',
+                timeline_desc_4: 'Mỗi ngày bên em là một niềm hạnh phúc. Tình yêu tuyệt vời nhất của chúng ta mới vừa bắt đầu.',
+                gallery_title: 'Những Khoảnh Khắc',
+                gallery_subtitle: 'Mỗi bức ảnh là một khoảng khắc, nhịp đập của tình yêu...',
+                gallery_desc_1: 'Tin nhắn đầu tiên cho em',
+                gallery_desc_2: 'Món quà đầu tiên cho em',
+                gallery_desc_3: 'Buổi hẹn đầu tiên',
+                gallery_desc_4: 'Ngày đầu tiên chúng ta yêu nhau',
+                gallery_desc_5: 'Ảnh 1',
+                gallery_desc_6: 'Ảnh  2',
+                gallery_desc_7: 'Ảnh  3 ',
+                gallery_desc_8: 'Bữa ăn nhân đạo',
+                contact_title: 'Gửi Cho Chúng Tôi Một Lời Nhắn',
+                contact_subtitle: 'Chúng tôi rất muốn nghe từ bạn...',
+                contact_send: 'Gửi Lời Nhắn Tình Yêu'
+            },
+            en: {
+                nav_home: 'Home',
+                nav_about: 'About',
+                nav_story: 'Story',
+                nav_gallery: 'Gallery',
+                nav_contact: 'Contact',
+                hero_title: "We're In Love",
+                hero_subtitle: 'A beautiful journey that started with a simple moment...',
+                counter_days: 'Days',
+                counter_hours: 'Hours',
+                counter_minutes: 'Min',
+                counter_seconds: 'Sec',
+                about_title: 'About Us',
+                about_subtitle: 'Our beautiful story in two hearts...',
+                story_title: 'Our Love Story',
+                story_subtitle: 'Milestones that shaped our forever...',
+                timeline_title_1: 'That First Message',
+                timeline_desc_1: 'That first message was the spark that ignited our beautiful love story.',
+                timeline_title_2: 'Our First Meeting',
+                timeline_desc_2: 'We finally met in person, and it felt like coming home.',
+                timeline_title_3: 'The Confession',
+                timeline_desc_3: 'By the tranquil shores of West Lake, you opened your heart and confessed your love to me.',
+                timeline_title_4: 'Forever Starts Now',
+                timeline_desc_4: 'Every day with you is a blessing. Our greatest adventure is just beginning.',
+                gallery_title: 'Our Moments',
+                gallery_subtitle: 'Every photo is a heartbeat of our love story...',
+                gallery_desc_1: 'The first message to you',
+                gallery_desc_2: 'The first gift for you',
+                gallery_desc_3: 'The first date',
+                gallery_desc_4: 'The first day we fell in love',
+                gallery_desc_5: 'Ordinary photo 1',
+                gallery_desc_6: 'Ordinary photo 2',
+                gallery_desc_7: 'Ordinary photo 3',
+                gallery_desc_8: 'The "charity" meal',
+                contact_title: 'Send us a Message',
+                contact_subtitle: "We'd love to hear from you...",
+                contact_send: 'Send Love Message'
+            }
+        };
+
+        let currentLang = localStorage.getItem('lang') || 'en';
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('lang', lang);
+            
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
             });
-          },
-          {
-            threshold: 0.2, // phần tử hiển thị 20% sẽ kích hoạt
-          }
-        );
 
-        // Lấy tất cả section có data-animate
-        document
-          .querySelectorAll("[data-animate]")
-          .forEach((el) => observer.observe(el));
-      });
+            document.getElementById('langText').textContent = lang === 'vi' ? 'Tiếng Việt' : 'English';
+        }
+
+        document.getElementById('langToggle').addEventListener('click', () => {
+            const newLang = currentLang === 'vi' ? 'en' : 'vi';
+            updateLanguage(newLang);
+        });
+
+        window.addEventListener('load', () => {
+            updateLanguage(currentLang);
+        });
+
+        // ============ AOS INITIALIZATION ============
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: false,
+            offset: 100
+        });
+        
+        // ============ GLIGHTBOX INITIALIZATION ============
+        const lightbox = GLightbox({ selector: '.glightbox' });
+        
+        // ============ COUNTER LOGIC ============
+        const startDate = new Date('2025-09-08');
+        
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - startDate;
+            
+            if (diff < 0) {
+                document.getElementById('days').textContent = '0';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+        
+        updateCounter();
+        setInterval(updateCounter, 1000);
+        
+        // ============ MOBILE MENU ============
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // ============ VISITOR TRACKING ============
+        async function trackVisitor() {
+            try {
+                // Generate or retrieve User ID
+                let userId = localStorage.getItem('userId');
+                if (!userId) {
+                    userId = 'user' + Date.now() + Math.random().toString(36).substr(2, 9);
+                    localStorage.setItem('userId', userId);
+                }
+                
+                // Check if new session
+                const lastVisit = localStorage.getItem('lastVisit');
+                const sessionTime = Date.now();
+                const isNewSession = !lastVisit || (sessionTime - parseInt(lastVisit) > 30 * 60 * 1000); // 30 mins
+                localStorage.setItem('lastVisit', sessionTime);
+                
+                // Get IP Address
+                let ipAddress = 'Unknown';
+                try {
+                    const ipResponse = await fetch('https://api.ipify.org?format=json');
+                    const ipData = await ipResponse.json();
+                    ipAddress = ipData.ip;
+                } catch (e) {
+                    ipAddress = 'Unable to fetch';
+                }
+                
+                // Parse User Agent
+                const ua = navigator.userAgent;
+                let device = 'Unknown';
+                let browser = 'Unknown';
+                let os = 'Unknown';
+                
+                if (/Mobile|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua)) {
+                    device = 'Mobile';
+                } else if (/Tablet|iPad/i.test(ua)) {
+                    device = 'Tablet';
+                } else {
+                    device = 'Desktop';
+                }
+                
+                // Browser detection
+                if (/Chrome/i.test(ua)) browser = 'Chrome ' + ua.match(/Chrome\/([0-9]+)/)?.[1] || '';
+                else if (/Safari/i.test(ua)) browser = 'Safari ' + ua.match(/Version\/([0-9]+)/)?.[1] || '';
+                else if (/Firefox/i.test(ua)) browser = 'Firefox ' + ua.match(/Firefox\/([0-9]+)/)?.[1] || '';
+                else if (/MSIE|Trident/i.test(ua)) browser = 'Internet Explorer';
+                else if (/Instagram/i.test(ua)) browser = 'Instagram ' + ua.match(/Instagram ([0-9.]+)/)?.[1] || '';
+                else if (/WhatsApp/i.test(ua)) browser = 'WhatsApp';
+                else if (/Telegram/i.test(ua)) browser = 'Telegram';
+                else browser = 'Unknown';
+                
+                // OS detection
+                if (/Windows/i.test(ua)) os = 'Windows';
+                else if (/Mac/i.test(ua)) os = 'macOS';
+                else if (/iPhone|iPad/i.test(ua)) os = 'iOS ' + ua.match(/OS ([0-9_]+)/)?.[1]?.replace(/_/g, '.') || '';
+                else if (/Android/i.test(ua)) os = 'Android ' + ua.match(/Android ([0-9.]+)/)?.[1] || '';
+                else if (/Linux/i.test(ua)) os = 'Linux';
+                else os = 'Unknown';
+                
+                // Get location and timezone
+                const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                const language = navigator.language || 'Unknown';
+                
+                // Get screen and viewport info
+                const screenWidth = screen.width;
+                const screenHeight = screen.height;
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+                
+                // Get page and referrer info
+                const pageUrl = window.location.href;
+                const referrer = document.referrer || 'Direct access';
+                
+                // Format time
+                const now = new Date();
+                const timeString = String(now.getHours()).padStart(2, '0') + ':' + 
+                                   String(now.getMinutes()).padStart(2, '0') + ':' + 
+                                   String(now.getSeconds()).padStart(2, '0') + ' ' +
+                                   String(now.getDate()).padStart(2, '0') + '/' +
+                                   String(now.getMonth() + 1).padStart(2, '0') + '/' +
+                                   now.getFullYear();
+                
+                // Create visitor message
+                const visitorMessage = `
+🌐 <b>Website Visitor Alert</b>
+
+👤 <b>User ID:</b> ${userId}
+🌐 <b>IP Address:</b> ${ipAddress}
+📱 <b>Device:</b> ${device}
+🌐 <b>Browser:</b> ${browser}
+💻 <b>OS:</b> ${os}
+🔄 <b>Session:</b> ${isNewSession ? 'New' : 'Returning'}
+⏰ <b>Visit Time:</b> ${timeString}
+📄 <b>Page:</b> <code>${pageUrl}</code>
+🔗 <b>Referrer:</b> ${referrer}
+📺 <b>Screen:</b> ${screenWidth}x${screenHeight}
+🖼️ <b>Viewport:</b> ${viewportWidth}x${viewportHeight}
+🌏 <b>Language:</b> ${language}
+⏰ <b>Timezone:</b> ${timezone}
+
+🔧 <b>User Agent:</b> <code>${ua}</code>
+                `.trim();
+                
+                // Send to Telegram
+                await fetch(`https://api.telegram.org/bot${TELEGRAM_CONFIG.BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CONFIG.CHAT_ID,
+                        text: visitorMessage,
+                        parse_mode: 'HTML'
+                    })
+                });
+            } catch (error) {
+                console.error('Error tracking visitor:', error);
+            }
+        }
+        
+        // Track visitor on page load
+        window.addEventListener('load', trackVisitor);
+        
+        // ============ CONTACT FORM - SEND TO TELEGRAM ============
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const message = document.getElementById('messageInput').value;
+            const btn = e.target.querySelector('button');
+            
+            // Create message for Telegram
+            const telegramMessage = `
+💬 <b>New Message from Website</b>
+
+📝 <b>Message:</b>
+${message}
+            `.trim();
+            
+            btn.disabled = true;
+            btn.style.opacity = '0.5';
+            
+            try {
+                // Send to Telegram
+                await fetch(`https://api.telegram.org/bot${TELEGRAM_CONFIG.BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CONFIG.CHAT_ID,
+                        text: telegramMessage,
+                        parse_mode: 'HTML'
+                    })
+                });
+                
+                // Reset form
+                e.target.reset();
+            } catch (error) {
+                console.error('Error sending message:', error);
+            } finally {
+                btn.disabled = false;
+                btn.style.opacity = '1';
+            }
+        });
+        
+        // ============ SMOOTH SCROLL ============
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
     </script>
-    <!-- Swiper Js  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".gallerySwiper", {
-        loop: true,
-        spaceBetween: 20,
-        slidesPerView: 1.2, // Vuốt ngang
-        centeredSlides: true,
-        grabCursor: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2.5,
-          },
-          1024: {
-            slidesPerView: 3.5,
-          },
-        },
-      });
-    </script>
-  </body>
+</body>
 </html>
