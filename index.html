@@ -1133,6 +1133,7 @@
             background: #f3f3f3 !important;
             color: #111 !important;
             filter: grayscale(1);
+            padding-top: 0 !important;
         }
 
         body::before,
@@ -1146,6 +1147,11 @@
         .section-white,
         #mobileMenu {
             background: #ececec !important;
+        }
+
+        .header,
+        #mobileMenu {
+            display: none !important;
         }
 
         .header,
@@ -1175,10 +1181,12 @@
             
             <ul class="hidden md:flex gap-8 text-gray-700">
                 <li><a href="#home" class="hover:text-pink-500 transition font-medium" data-i18n="nav_home">Home</a></li>
+                <!--
                 <li><a href="#about" class="hover:text-pink-500 transition font-medium" data-i18n="nav_about">About</a></li>
                 <li><a href="#story" class="hover:text-pink-500 transition font-medium" data-i18n="nav_story">Story</a></li>
                 <li><a href="#gallery" class="hover:text-pink-500 transition font-medium" data-i18n="nav_gallery">Gallery</a></li>
                 <li><a href="#contact" class="hover:text-pink-500 transition font-medium" data-i18n="nav_contact">Contact</a></li>
+                -->
             </ul>
             
             <div class="flex gap-4 items-center">
@@ -1196,10 +1204,12 @@
     <div id="mobileMenu" class="hidden fixed inset-0 top-16 bg-white z-40 md:hidden">
         <ul class="flex flex-col gap-4 p-6">
             <li><a href="#home" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_home">Home</a></li>
+            <!--
             <li><a href="#about" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_about">About</a></li>
             <li><a href="#story" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_story">Story</a></li>
             <li><a href="#gallery" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_gallery">Gallery</a></li>
             <li><a href="#contact" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_contact">Contact</a></li>
+            -->
         </ul>
     </div>
     
@@ -1280,10 +1290,20 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Thank You Message -->
+                <div class="mt-12 max-w-2xl mx-auto text-center p-6 bg-white bg-opacity-60 backdrop-blur-md rounded-3xl border border-pink-100/50 shadow-sm animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                    <h3 class="dancing-script text-2xl sm:text-3xl md:text-4xl text-pink-500 font-bold mb-3" data-i18n="thank_you_title">Cảm ơn em vì tất cả</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed italic" data-i18n="thank_you_body">
+                        Cảm ơn em vì đã đến, đồng hành cùng anh trải qua những khoảnh khắc tuyệt vời trong tình yêu của chúng ta. 
+                        Cảm ơn tình yêu, sự kiên nhẫn và sự tha thứ mà em đã dành cho anh. 
+                        Anh mong rằng em sẽ luôn hạnh phúc bên những người thương yêu em.
+                    </p>
+                </div>
             </div>
         </section>
-        
-        <!-- About Us Section -->
+        <!--
+        [About Us Section]
         <section id="about" class="section-pink" data-aos="fade-up">
             <div class="container mx-auto max-w-6xl">
                 <h2 class="section-title dancing-script text-center" data-i18n="about_title">About Us</h2>
@@ -1308,7 +1328,7 @@
                         </p>
                     </div>
                     
-                    <!-- Heart decoration in the middle -->
+                    [Heart decoration in the middle]
                     <div class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                         <i class="fas fa-heart text-pink-400 text-4xl animate-pulse" style="filter: drop-shadow(0 0 10px rgba(255, 193, 207, 0.6));"></i>
                     </div>
@@ -1334,7 +1354,7 @@
             </div>
         </section>
         
-        <!-- Story Timeline -->
+        [Story Timeline]
         <section id="story" class="section-white" data-aos="fade-up">
             <div class="container mx-auto max-w-4xl">
                 <h2 class="section-title dancing-script text-center" data-i18n="story_title">Our Love Story</h2>
@@ -1380,7 +1400,7 @@
             </div>
         </section>
         
-        <!-- Gallery Section -->
+        [Gallery Section]
         <section id="gallery" class="section-pink" data-aos="fade-up">
             <div class="container mx-auto max-w-6xl">
                 <h2 class="section-title dancing-script text-center" data-i18n="gallery_title">Our Moments</h2>
@@ -1423,7 +1443,7 @@
             </div>
         </section>
         
-        <!-- Contact Section -->
+        [Contact Section]
         <section id="contact" class="section-white" data-aos="fade-up">
             <div class="container mx-auto max-w-2xl">
                 <h2 class="section-title dancing-script text-center" data-i18n="contact_title">Send us a Message</h2>
@@ -1440,18 +1460,18 @@
         </section>
     </main>
     
-    <!-- Footer -->
+    [Footer]
     <footer class="relative overflow-hidden">
-        <!-- Decorative wave top -->
+        [Decorative wave top]
         <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
             <svg class="relative block w-full h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="white"></path>
             </svg>
         </div>
         
-        <!-- Main footer content -->
+        [Main footer content]
         <div class="bg-gradient-to-br from-pink-100 via-pink-50 to-rose-100 pt-20 pb-8">
-            <!-- Floating hearts decoration -->
+            [Floating hearts decoration]
             <div class="absolute inset-0 pointer-events-none overflow-hidden">
                 <div class="footer-heart" style="left: 10%; animation-delay: 0s;">💕</div>
                 <div class="footer-heart" style="left: 25%; animation-delay: 1s;">💗</div>
@@ -1461,7 +1481,7 @@
             </div>
             
             <div class="container mx-auto max-w-6xl px-4 relative z-10">
-                <!-- Logo and tagline -->
+                [Logo and tagline]
                 <div class="text-center mb-8">
                     <div class="inline-block relative">
                         <i class="fas fa-heart text-pink-300 text-2xl absolute -left-8 top-1/2 -translate-y-1/2 animate-pulse"></i>
@@ -1471,7 +1491,7 @@
                     <p class="text-gray-600 mt-3 text-lg"><span data-i18n="footer_tagline_1">Made with</span> <i class="fas fa-heart text-pink-500 animate-pulse mx-1"></i> <span data-i18n="footer_tagline_2">for our love story</span></p>
                 </div>
                 
-                <!-- Navigation links -->
+                [Navigation links]
                 <div class="flex justify-center gap-4 md:gap-8 text-sm md:text-base flex-wrap mb-8">
                     <a href="#home" class="footer-link group">
                         <i class="fas fa-home mr-1 group-hover:scale-110 transition-transform"></i>
@@ -1495,14 +1515,14 @@
                     </a>
                 </div>
                 
-                <!-- Divider -->
+                [Divider]
                 <div class="flex items-center justify-center gap-4 mb-6">
                     <div class="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-pink-300"></div>
                     <i class="fas fa-heart text-pink-400"></i>
                     <div class="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-pink-300"></div>
                 </div>
                 
-                <!-- Copyright -->
+                [Copyright]
                 <div class="text-center">
                     <p class="text-gray-500 text-sm">© 2025-2026 <span class="text-pink-500 font-medium">Dương & Nga</span> - <span data-i18n="footer_copyright">Our Love Story</span></p>
                     <p class="text-gray-400 text-xs mt-1" data-i18n="footer_cherished">All moments cherished forever 💕</p>
@@ -1510,14 +1530,15 @@
             </div>
         </div>
         
-        <!-- Bottom accent line -->
+        [Bottom accent line]
         <div class="h-1 bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400"></div>
     </footer>
     
-    <!-- Back to top button -->
+    [Back to top button]
     <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110 hover:shadow-xl z-50 flex items-center justify-center">
         <i class="fas fa-chevron-up"></i>
     </button>
+    -->
     
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -1599,7 +1620,9 @@
                 footer_tagline_2: 'cho câu chuyện tình yêu',
                 footer_copyright: 'Câu Chuyện Tình Yêu',
                 footer_cherished: 'Mọi khoảnh khắc đều được trân trọng mãi mãi 💕',
-                timeline_date_4: '29/05/2026'
+                timeline_date_4: '29/05/2026',
+                thank_you_title: 'Cảm ơn em vì tất cả',
+                thank_you_body: 'Cảm ơn em vì đã đến, đã cùng anh trải qua những khoảnh khắc tuyệt vời nhất. Cảm ơn tình yêu, sự kiên nhẫn và sự ấm áp em đã dành cho anh. Em sẽ luôn là một phần vô cùng đặc biệt trong cuộc đời anh. 💕'
             },
             en: {
                 nav_home: 'Home',
@@ -1651,7 +1674,9 @@
                 footer_tagline_2: 'for our love story',
                 footer_copyright: 'Our Love Story',
                 footer_cherished: 'All moments cherished forever 💕',
-                timeline_date_4: '29/05/2026'
+                timeline_date_4: '29/05/2026',
+           
+
             }
         };
 
