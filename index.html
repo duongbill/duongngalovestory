@@ -49,6 +49,8 @@
         
         html {
             overflow-x: hidden;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
         }
         
         body {
@@ -1597,7 +1599,7 @@
                 footer_tagline_2: 'cho câu chuyện tình yêu',
                 footer_copyright: 'Câu Chuyện Tình Yêu',
                 footer_cherished: 'Mọi khoảnh khắc đều được trân trọng mãi mãi 💕',
-                timeline_date_4: 'Bây giờ'
+                timeline_date_4: '29/05/2026'
             },
             en: {
                 nav_home: 'Home',
@@ -1649,7 +1651,7 @@
                 footer_tagline_2: 'for our love story',
                 footer_copyright: 'Our Love Story',
                 footer_cherished: 'All moments cherished forever 💕',
-                timeline_date_4: 'Now'
+                timeline_date_4: '29/05/2026'
             }
         };
 
@@ -1699,9 +1701,10 @@
         
         // ============ COUNTER LOGIC ============
         const startDate = new Date('2025-09-08');
+        const endDate = new Date('2026-05-29T15:10:40+07:00'); // Relationship end date
         
         function updateCounter() {
-            const now = new Date();
+            const now = endDate;
             const diff = now - startDate;
             
             if (diff < 0) {
