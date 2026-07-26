@@ -79,9 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalGalleryContainer = document.getElementById("modalGalleryContainer");
     const closeModalBtn = document.getElementById("closeModalBtn");
 
-    document.querySelectorAll(".open-venue-modal").forEach(btn => {
-        btn.addEventListener("click", (e) => {
+    document.addEventListener("click", (e) => {
+        const btn = e.target.closest(".open-venue-modal");
+        if (btn) {
             e.preventDefault();
+            e.stopPropagation();
             const key = btn.getAttribute("data-venue");
             const data = venueData[key];
             if (data && venueModal) {
@@ -89,14 +91,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (modalVenueDesc) modalVenueDesc.textContent = data.desc;
                 if (modalGalleryContainer) {
                     modalGalleryContainer.innerHTML = data.images.map(img => 
-                        `<img src="${img}" alt="${data.title}" class="modal-gallery-item" />`
+                        `<img src="${img}" alt="${data.title}" class="modal-gallery-item mb-3" />`
                     ).join("");
                 }
                 venueModal.classList.add("active");
                 document.body.style.overflow = "hidden";
             }
-        });
+        }
     });
+
+    const closeModalBtnBottom = document.getElementById("closeModalBtnBottom");
 
     const closeModal = () => {
         if (venueModal) {
@@ -106,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     if (closeModalBtn) closeModalBtn.addEventListener("click", closeModal);
+    if (closeModalBtnBottom) closeModalBtnBottom.addEventListener("click", closeModal);
     if (venueModal) {
         venueModal.addEventListener("click", (e) => {
             if (e.target === venueModal) closeModal();
