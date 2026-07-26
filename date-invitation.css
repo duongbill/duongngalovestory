@@ -1,0 +1,257 @@
+/* Ultra-Luxury Warm Neutral Invitation Design System */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-warm: #FAF8F5;
+    --text-primary: #2B2625;
+    --text-secondary: #736B67;
+    --border-color: #E8E2DC;
+    --border-accent: #C4B5A5;
+    --card-bg: #FFFFFF;
+    --accent-dark: #2B2625;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Universal Typography & Font Hierarchy Standard */
+body, #dateInvitationWrapper, input, button, textarea, select {
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-serif-custom, .timeline-step-badge {
+    font-family: 'Playfair Display', Georgia, serif !important;
+}
+
+/* Consistent Text Scale & Harmonized Line Heights */
+h1 {
+    font-size: 1.65rem !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em !important;
+    line-height: 1.35 !important;
+    color: var(--text-primary) !important;
+}
+
+h2 {
+    font-size: 1.125rem !important; /* 18px */
+    font-weight: 600 !important;
+    letter-spacing: 0.01em !important;
+    color: var(--text-primary) !important;
+}
+
+h3 {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+}
+
+p, label, span {
+    line-height: 1.6 !important;
+}
+
+#dateInvitationWrapper {
+    background-color: var(--bg-warm);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+/* Animations */
+.fade-in {
+    animation: elegantFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes elegantFade {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+}
+
+/* Luxury Cards */
+.envelope-card,
+.luxury-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(43, 38, 37, 0.03);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+    border-color: var(--border-accent);
+    box-shadow: 0 8px 24px rgba(43, 38, 37, 0.06);
+}
+
+/* Vertical Timeline Axis Line */
+.vertical-timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    border-left: 1px solid var(--border-color);
+}
+
+.vertical-timeline-item:last-child {
+    border-left: 1px solid transparent;
+    padding-bottom: 0;
+}
+
+.timeline-step-badge {
+    position: absolute;
+    left: -0.875rem;
+    top: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--bg-warm);
+    border: 1px solid var(--border-accent);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Minimalist Radio Card Styling */
+.radio-option-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 1rem;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.radio-option-card:hover {
+    border-color: var(--border-accent);
+}
+
+.radio-option-card:has(input[type="radio"]:checked) {
+    border-color: var(--text-primary);
+    background: #FAF8F5;
+    box-shadow: 0 2px 10px rgba(43, 38, 37, 0.04);
+}
+
+/* Sleek Monochrome Radio Buttons */
+input[type="radio"] {
+    accent-color: var(--text-primary) !important;
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+}
+
+/* Clean Input Fields */
+.custom-input,
+#otherDinnerInput,
+#otherActivityInput,
+#noteInput {
+    border: 1px solid var(--border-color) !important;
+    background-color: #FFFFFF !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 1rem !important;
+    outline: none !important;
+    transition: all 0.25s ease !important;
+    color: var(--text-primary) !important;
+    font-size: 0.85rem !important;
+}
+
+.custom-input:focus,
+#otherDinnerInput:focus,
+#otherActivityInput:focus,
+#noteInput:focus {
+    border-color: var(--text-primary) !important;
+    box-shadow: 0 0 0 2px rgba(43, 38, 37, 0.08) !important;
+}
+
+/* Elegant Solid Dark Button */
+.btn-invite {
+    background: var(--text-primary);
+    color: #FAF8F5;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 14px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 14px rgba(43, 38, 37, 0.12);
+}
+
+.btn-invite:hover {
+    background: #423B3A;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(43, 38, 37, 0.18);
+}
+
+.btn-invite:active {
+    transform: translateY(0);
+}
+
+/* Fullscreen / Bottom Sheet Popup Modal */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(43, 38, 37, 0.45);
+    backdrop-filter: blur(6px);
+    z-index: 10000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+@media (min-width: 640px) {
+    .modal-backdrop {
+        align-items: center;
+        padding: 1.5rem;
+    }
+}
+
+.modal-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-card {
+    background: #FAF8F5;
+    width: 100%;
+    max-width: 520px;
+    max-height: 85vh;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1.5rem;
+    overflow-y: auto;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(100%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid var(--border-color);
+}
+
+@media (min-width: 640px) {
+    .modal-card {
+        border-radius: 24px;
+        transform: translateY(20px);
+    }
+}
+
+.modal-backdrop.active .modal-card {
+    transform: translateY(0);
+}
+
+.modal-gallery-item {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+}
