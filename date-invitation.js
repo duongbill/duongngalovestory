@@ -70,6 +70,22 @@ document.addEventListener("DOMContentLoaded", () => {
             images: [
                 "./assess/img/sushi/hagi.jpg"
             ]
+        },
+        namasushi: {
+            title: "Namasushi",
+            desc: "Không gian ẩm thực Nhật Bản ấm cúng, sang trọng với các món sushi và sashimi đa dạng, tinh tế chế biến bởi đầu bếp giàu kinh nghiệm.",
+            images: [
+                "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&auto=format&fit=crop&q=60",
+                "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800&auto=format&fit=crop&q=60"
+            ]
+        },
+        isushi: {
+            title: "Isushi",
+            desc: "Buffet Nhật Bản đẳng cấp mang tới trải nghiệm thực sự trọn vẹn với sashimi tươi ngon và hơn 100 món ăn tinh hoa Nhật Bản khác.",
+            images: [
+                "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&auto=format&fit=crop&q=60",
+                "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=800&auto=format&fit=crop&q=60"
+            ]
         }
     };
 
