@@ -257,6 +257,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const selectedDrinksRadio = document.querySelector('input[name="drinks_option"]:checked');
             drinksOption = selectedDrinksRadio ? selectedDrinksRadio.value : "Chưa chọn";
         }
+        const selectedDresscodeRadio = document.querySelector('input[name="dresscode"]:checked');
+        const dresscodeOption = selectedDresscodeRadio ? selectedDresscodeRadio.value : "Chưa chọn";
         
         const dateOption = document.getElementById("datePicker").value || "05/08/2026";
         const timeOption = document.getElementById("timePicker").value || "19:00";
@@ -275,6 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 🍽️ <b>Bữa tối:</b> ${escapeHtml(dinnerOption)}
 ☕ <b>Hoạt động:</b> ${escapeHtml(drinksOption)}
+👗 <b>Dresscode:</b> ${escapeHtml(dresscodeOption)}
 📅 <b>Ngày hẹn:</b> ${escapeHtml(dateOption)}
 ⏰ <b>Giờ hẹn:</b> ${escapeHtml(timeOption)}
 📝 <b>Lời nhắn:</b> <i>"${escapeHtml(noteMessage)}"</i>

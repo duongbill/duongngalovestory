@@ -31,13 +31,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./index.css" />
     
-    <!-- Date Invitation CSS -->
-    <link rel="stylesheet" href="./date-invitation.css" />
+    <!-- Date Invitation CSS (Hidden for main site view) -->
+    <!-- <link rel="stylesheet" href="./date-invitation.css" /> -->
 </head>
 
 <body>
-    <!-- ============ DATE INVITATION CONTAINER (MODULAR OVERLAY) ============ -->
-    <div id="dateInvitationWrapper" class="fixed inset-0 z-[9999] bg-[#FFF8F8] overflow-y-auto">
+    <!-- ============ DATE INVITATION CONTAINER (MODULAR OVERLAY - HIDDEN) ============ -->
+    <div id="dateInvitationWrapper" class="fixed inset-0 z-[9999] bg-[#FFF8F8] overflow-y-auto hidden">
         
         <!-- GIAI ĐOẠN 1: Bức thư bảo mật (Passcode Gate) - TEMPORARILY HIDDEN FOR DEBUGGING -->
         <div id="passcodeGate" class="min-h-screen flex items-center justify-center p-4 hidden">
@@ -312,9 +312,50 @@
                     </div>
                 </div>
 
-                <!-- TIMELINE ITEM 3: THỜI GIAN -->
+                <!-- TIMELINE ITEM 3: DRESSCODE -->
                 <div class="vertical-timeline-item">
                     <div class="timeline-step-badge">3</div>
+                    <h2 class="font-serif-custom text-lg font-semibold text-[#2B2625] mb-1">Dresscode cho buổi hẹn</h2>
+                    <p class="text-[11px] text-[#736B67] font-light mb-3">Em muốn chúng mình mặc tông màu/phong cách gì để đồng điệu với nhau nè:</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <label class="flex items-center cursor-pointer p-3 luxury-card hover:border-[#E06D7B] transition-all">
+                            <input type="radio" name="dresscode" value="Romantic Pastel (Hồng/Trắng/Pastel)" checked>
+                            <div class="ml-3">
+                                <span class="block text-xs font-semibold text-[#2B2625]">Romantic Pastel 💕</span>
+                                <span class="block text-[10px] text-[#736B67] font-light">Tông hồng, trắng hoặc pastel nhẹ nhàng, ngọt ngào</span>
+                            </div>
+                        </label>
+                        
+                        <label class="flex items-center cursor-pointer p-3 luxury-card hover:border-[#E06D7B] transition-all">
+                            <input type="radio" name="dresscode" value="Elegant Black & Beige (Đen/Be/Nâu)">
+                            <div class="ml-3">
+                                <span class="block text-xs font-semibold text-[#2B2625]">Elegant Black & Beige 🖤</span>
+                                <span class="block text-[10px] text-[#736B67] font-light">Tông đen, be hoặc nâu tinh tế, lịch lãm, sang chảnh</span>
+                            </div>
+                        </label>
+
+                        <label class="flex items-center cursor-pointer p-3 luxury-card hover:border-[#E06D7B] transition-all">
+                            <input type="radio" name="dresscode" value="Casual Jeans & White (Trắng & Denim)">
+                            <div class="ml-3">
+                                <span class="block text-xs font-semibold text-[#2B2625]">Casual Denim & White 👟</span>
+                                <span class="block text-[10px] text-[#736B67] font-light">Năng động, thoải mái với áo trắng và quần/váy jeans</span>
+                            </div>
+                        </label>
+
+                        <label class="flex items-center cursor-pointer p-3 luxury-card hover:border-[#E06D7B] transition-all">
+                            <input type="radio" name="dresscode" value="Tùy ý em chọn / Em mặc gì anh mặc nấy">
+                            <div class="ml-3">
+                                <span class="block text-xs font-semibold text-[#2B2625]">Tùy ý em chọn 🌸</span>
+                                <span class="block text-[10px] text-[#736B67] font-light">Em mặc gì cũng đẹp nhất trong mắt anh rồi!</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- TIMELINE ITEM 4: THỜI GIAN -->
+                <div class="vertical-timeline-item">
+                    <div class="timeline-step-badge">4</div>
                     <h2 class="font-serif-custom text-lg font-semibold text-[#2B2625] mb-1">Điều chỉnh ngày & giờ hẹn theo lịch trình của em</h2>
                     <p class="text-[11px] text-[#736B67] font-light mb-3">Anh dự kiến ngày 05/08/2026 lúc 19:00. Em có thể đổi lại lịch phù hợp với em nhé:</p>
 
@@ -330,9 +371,9 @@
                     </div>
                 </div>
 
-                <!-- TIMELINE ITEM 4: LỜI NHẮN -->
+                <!-- TIMELINE ITEM 5: LỜI NHẮN -->
                 <div class="vertical-timeline-item">
-                    <div class="timeline-step-badge">4</div>
+                    <div class="timeline-step-badge">5</div>
                     <h2 class="font-serif-custom text-lg font-semibold text-[#2B2625] mb-3">Lời nhắn gửi anh</h2>
 
                     <div class="luxury-card p-3">
@@ -389,7 +430,7 @@
         </div>
     </div>
     <!-- Header -->
-    <header class="header hidden">
+    <header class="header">
         <nav class="container mx-auto max-w-6xl px-4 py-4 flex justify-between items-center">
             <div class="dancing-script text-3xl font-bold bg-gradient-to-r from-pink-500 to-red-500 bg-clip-text text-transparent">
              Dương & Nga
@@ -400,7 +441,7 @@
                 <li><a href="#about" class="hover:text-pink-500 transition font-medium" data-i18n="nav_about">About</a></li>
                 <li><a href="#story" class="hover:text-pink-500 transition font-medium" data-i18n="nav_story">Story</a></li>
                 <li><a href="#gallery" class="hover:text-pink-500 transition font-medium" data-i18n="nav_gallery">Gallery</a></li>
-                <li><a href="#contact" class="hover:text-pink-500 transition font-medium" data-i18n="nav_contact">Contact</a></li>
+                <!-- <li><a href="#contact" class="hover:text-pink-500 transition font-medium" data-i18n="nav_contact">Contact</a></li> -->
             </ul>
             
             <div class="flex gap-4 items-center">
@@ -421,7 +462,7 @@
             <li><a href="#about" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_about">About</a></li>
             <li><a href="#story" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_story">Story</a></li>
             <li><a href="#gallery" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_gallery">Gallery</a></li>
-            <li><a href="#contact" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_contact">Contact</a></li>
+            <!-- <li><a href="#contact" class="mobile-menu-item block p-3 font-medium rounded-xl transition-all duration-300" data-i18n="nav_contact">Contact</a></li> -->
         </ul>
     </div>
     
@@ -645,8 +686,8 @@
             </div>
         </section>
         
-        <!-- Contact Section -->
-        <section id="contact" class="section-white" data-aos="fade-up">
+        <!-- Contact Section (Hidden) -->
+        <section id="contact" class="section-white hidden" data-aos="fade-up">
             <div class="container mx-auto max-w-2xl">
                 <h2 class="section-title dancing-script text-center" data-i18n="contact_title">Send us a Message</h2>
                 <p class="section-subtitle text-center" data-i18n="contact_subtitle">We'd love to hear from you...</p>
@@ -711,10 +752,10 @@
                         <i class="fas fa-images mr-1 group-hover:scale-110 transition-transform"></i>
                         <span data-i18n="nav_gallery">Gallery</span>
                     </a>
-                    <a href="#contact" class="footer-link group">
+                    <!-- <a href="#contact" class="footer-link group">
                         <i class="fas fa-envelope mr-1 group-hover:scale-110 transition-transform"></i>
                         <span data-i18n="nav_contact">Contact</span>
-                    </a>
+                    </a> -->
                 </div>
                 
                 <!-- Divider -->
@@ -1202,7 +1243,7 @@ ${message}
         });
     </script>
     
-    <!-- Date Invitation Script -->
-    <script src="./date-invitation.js"></script>
+    <!-- Date Invitation Script (Disabled) -->
+    <!-- <script src="./date-invitation.js"></script> -->
 </body>
 </html>
